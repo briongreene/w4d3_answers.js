@@ -124,3 +124,18 @@ console.log(slicedArray)
 // After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array? Last known Index location
 console.log(favMovies.indexOf('Fast and Furious'))
 // Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let? good question, tell me later!
+
+// Where is Waldo
+// With the following multi-dimensional array
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// Remove Eggbert (hint look at the slice/splice method(s))
+whereIsWaldo.splice(1, 1)
+console.log(whereIsWaldo)
+// Change "Neff" to "No One"
+whereIsWaldo[1][2] = 'No One'  //no splice or slice in multi-dimensional array  row [1] column [2] = 'No one'
+ console.log(whereIsWaldo)
+// Access and console.log "Waldo"
+whereIsWaldo[2][2] = 'Waldo'
+console.log(whereIsWaldo[2][2])

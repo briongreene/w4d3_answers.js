@@ -80,3 +80,47 @@ let ninja = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 for (let elements of ninja) {
     console.log(elements.toUpperCase())
 }
+
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// Console log: the index of Titanic
+console.log(favMovies.indexOf('Titanic'))
+
+// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+// Note: if you have to add to the array, feel free to add any movie you'd like
+
+// use the .sortmethod Thought question: what did this do to the array? //alphabetic order  Did it permanently alter it? it appears to alter it
+
+favMovies.sort();
+console.log(favMovies)
+// Use the method pop
+favMovies.pop()
+console.log(favMovies)  //removed volver from end
+// push"Guardians of the Galaxy"
+favMovies.push('Lord of the Rings')
+console.log(favMovies)
+// Reverse the array
+favMovies.reverse()
+console.log(favMovies)
+// // Use the shiftmethod
+favMovies.shift()
+console.log(favMovies)
+// unshift- what does it return?  //returns nothing
+favMovies.unshift()
+console.log(favMovies)
+// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+console.log(favMovies.indexOf('Django Unchained'))
+favMovies.splice(14, 1, 'Avatar')
+console.log(favMovies)
+// slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array? yes
+let half = Math.ceil(favMovies.length / 2);
+let takeHalf = favMovies.slice(half)
+console.log(takeHalf)
+// store the value of your slice in a variable, console.log it - Thought question: what is going on here? //movies returned using slice 
+let slicedArray = favMovies.slice(0, 9);
+console.log(slicedArray)
+// console.log your final results
+
+// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array? Last known Index location
+console.log(favMovies.indexOf('Fast and Furious'))
+// Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let? good question, tell me later!

@@ -139,3 +139,24 @@ whereIsWaldo[1][2] = 'No One'  //no splice or slice in multi-dimensional array  
 // Access and console.log "Waldo"
 whereIsWaldo[2][2] = 'Waldo'
 console.log(whereIsWaldo[2][2])
+
+// Excited Kitten
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// let text = "Love me, pet me! HSSSSSS!"
+let num = 20
+for (k = 0; k <= num; k++){
+              if(k % 2 == 0){
+            console.log(k +  "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away...")
+          } 
+    console.log(k)}
+
+
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+
+// Hint 1
+// Hint 2
+// Hint 3
+// Hint 4
+// Hint 5
+// Hint 6
+// Image of cat with funny quote about dot

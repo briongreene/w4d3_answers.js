@@ -160,3 +160,41 @@ for (k = 0; k <= num; k++){
 // Hint 5
 // Hint 6
 // Image of cat with funny quote about dot
+
+// Find the Median
+// Find the median number in the following numsarray, then console.log that number.
+// hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+//Google search math.floor complicated; will research again later
+// Define a function that takes an array of numbers as a parameter
+function findMedian(nums) {
+    // Sort the array in ascending order using Array.sort()
+    nums.sort((a, b) => a - b);
+  
+    // Get the number of elements in the array using Array.length
+    let n = nums.length;
+  
+    // Get the middle index of the array using Math.floor()
+    let mid = Math.floor(n / 2);
+  
+    // Check if the array length is odd or even
+    if (n % 2 === 0) {
+      // If even, return the average of the two middle elements
+      return (nums[mid - 1] + nums[mid]) / 2;
+    } else {
+      // If odd, return the element at the middle index
+      return nums[mid];
+    }
+  }
+  
+  // Declare an array of numbers
+  let nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+  
+  // Call the function and store its result in a variable
+  let median = findMedian(nums);
+  
+  // Use console.log() to print the result
+  console.log(median);
+  
+
